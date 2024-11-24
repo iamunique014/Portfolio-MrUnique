@@ -66,7 +66,7 @@ body {
 }
 
 #About {
-    min-height: 100vh;
+   /* min-height: 100vh;*/
     /*padding: 40px 20px;
     margin-top: 0;*/  /*Reset margin */
     /*background-color: rgba(0, 0, 0, 0.8);*/ /* Ensure contrast if needed*/ 
@@ -105,3 +105,9 @@ footer {
     }
 }
 
+/*About Section css*/
+img.img-fluid {
+    max-height: 700px; /* Adjust this value as needed */
+    object-fit: cover; /* Ensures the image doesn't stretch */
+    width: 100%; /* Ensures responsiveness */
+}
