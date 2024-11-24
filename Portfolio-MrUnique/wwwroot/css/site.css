@@ -105,9 +105,25 @@ footer {
     }
 }
 
+
+
 /*About Section css*/
 img.img-fluid {
-    max-height: 700px; /* Adjust this value as needed */
+    max-height: 600px; /* Adjust this value as needed */
     object-fit: cover; /* Ensures the image doesn't stretch */
     width: 100%; /* Ensures responsiveness */
 }
+
+.tab-content ul li {
+    list-style: circle;
+}
+
+
+/*Tabbed interface styles*/
+.tab-content ul li span {
+    color: #60ACC6;
+    font-size: 14px;
+}
+
+/*My Work css*/
+
