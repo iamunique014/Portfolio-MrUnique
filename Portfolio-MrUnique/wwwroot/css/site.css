@@ -16,6 +16,7 @@ html {
     position: relative;
     min-height: 100%;
     scroll-behavior: smooth;
+    background-color: black;
 }
 
 body {
@@ -23,9 +24,12 @@ body {
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
 }
 
+section {
+    color: #ababab;
+}
 
 
 /* Ensure the hero-section takes full height */
@@ -64,11 +68,11 @@ body {
         color: transparent;
     }
 
-#About {
+.projects, .about {
     /* min-height: 100vh;*/
     /*padding: 40px 20px;
     margin-top: 0;*/ /*Reset margin */
-    /*background-color: rgba(0, 0, 0, 0.8);*/ /* Ensure contrast if needed*/
+    background-color: rgba(0, 0, 0, 0.8); /* Ensure contrast if needed*/
 }
 
 footer {
@@ -113,8 +117,18 @@ img.img-fluid {
     width: 100%; /* Ensures responsiveness */
 }
 
+.tab-links li a{
+    color: #ababab;
+}
+
+    .tab-links li a:active {
+        color: #60ACC6;
+    }
+
+
 .tab-content ul li {
     list-style: circle;
+    color: #ababab;
 }
 
 
@@ -140,7 +154,7 @@ img.img-fluid {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #cbb26a);
+    background: linear-gradient(rgba(0,0,0,0.6), #60ACC6);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -150,7 +164,6 @@ img.img-fluid {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: center;
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
