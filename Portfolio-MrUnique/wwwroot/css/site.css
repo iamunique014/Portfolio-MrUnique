@@ -121,14 +121,24 @@ img.img-fluid {
     color: #ababab;
 }
 
-    .tab-links li a:active {
-        color: #60ACC6;
-    }
 
 
 .tab-content ul li {
     list-style: circle;
     color: #ababab;
+    
+}
+
+.tab-items .nav-link {
+    color: black;
+    border: 1px solid #60ACC6;
+    background-color: #60ACC6;
+}
+
+.tab-items .nav-link:hover {
+    color: #ababab;
+    border: 1px solid #60ACC6;
+    background-color: black;
 }
 
 
