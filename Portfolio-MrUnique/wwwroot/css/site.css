@@ -227,3 +227,14 @@ img.img-fluid {
     .btn:hover {
         background: #e0ad12;
     }*/
+
+
+/*Contact Styling*/
+
+.form-control {
+    
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    outline: none;
+}
