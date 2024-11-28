@@ -1,31 +1,35 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
-  scroll-behavior: smooth;
+    position: relative;
+    min-height: 100%;
+    scroll-behavior: smooth;
+    background-color: black;
 }
 
 body {
     background: url(../Images/software-developer-6521720_1280.jpg) rgba(0, 0, 0, 0.5);
-    background-blend-mode:multiply;
+    background-blend-mode: multiply;
     background-position: center;
-    background-size:cover;
-    background-repeat: repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+section {
+    color: #ababab;
+}
 
 
 /* Ensure the hero-section takes full height */
@@ -38,38 +42,37 @@ body {
     position: relative;
 }
 
-.hero-section .container {
-    z-index: 10;  /*Ensures the text is visible above any background */
+    .hero-section .container {
+        z-index: 10; /*Ensures the text is visible above any background */
+    }
 
-}
 
+    .hero-section h1 {
+        color: white;
+        font-size: 5rem;
+        text-transform: uppercase;
+        transition: 0.5s;
+    }
 
-.hero-section h1 {
-    color: white;
-    font-size: 5rem;
-    text-transform: uppercase;
-    transition: 0.5s;
-}
+    .hero-section p {
+        color: white;
+        font-size: 2rem;
+    }
 
-.hero-section p {
-    color: white;
-    font-size: 2rem;
-}
+    .hero-section span {
+        color: #60ACC6;
+    }
 
-.hero-section span {
-    color: #60ACC6;
-}
+    .hero-section h1:hover {
+        -webkit-text-stroke: 2px #60ACC6;
+        color: transparent;
+    }
 
-.hero-section h1:hover {
-    -webkit-text-stroke: 2px #60ACC6;
-    color: transparent;
-}
-
-#About {
-   /* min-height: 100vh;*/
+.projects, .about {
+    /* min-height: 100vh;*/
     /*padding: 40px 20px;
-    margin-top: 0;*/  /*Reset margin */
-    /*background-color: rgba(0, 0, 0, 0.8);*/ /* Ensure contrast if needed*/ 
+    margin-top: 0;*/ /*Reset margin */
+    background-color: rgba(0, 0, 0, 0.8); /* Ensure contrast if needed*/
 }
 
 footer {
@@ -101,10 +104,9 @@ footer {
     .hero-section {
         min-height: 80vh;
         padding: 20px;
-        margin-top: -20px; 
+        margin-top: -20px;
     }
 }
-
 
 
 /*About Section css*/
@@ -114,16 +116,114 @@ img.img-fluid {
     width: 100%; /* Ensures responsiveness */
 }
 
+.tab-links li a{
+    color: #ababab;
+}
+
+
+
 .tab-content ul li {
     list-style: circle;
+    color: #ababab;
+    
+}
+
+.tab-items .nav-link {
+    color: black;
+    border: 1px solid #60ACC6;
+    background-color: #60ACC6;
+}
+
+.tab-items .nav-link:hover {
+    color: #ababab;
+    border: 1px solid #60ACC6;
+    background-color: black;
 }
 
 
-/*Tabbed interface styles*/
-.tab-content ul li span {
-    color: #60ACC6;
-    font-size: 14px;
-}
+    /*Tabbed interface styles*/
+    .tab-content ul li span {
+        color: #60ACC6;
+        font-size: 14px;
+    }
+
 
 /*My Work css*/
+.projects{
+    background-color: brown;
+}
 
+
+.project{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project img {
+        width: 100%;
+        display: block;
+        transition: transform 0.5s;
+        border-radius: 10px;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #60ACC6);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer a{
+    margin-top: 20px;
+    font-size: 18px;
+  line-height: 60px;
+    background: #221d1d;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.project:hover .layer {
+    height: 100%;
+}
+
+.project img.img-fluid {
+    max-height: 450px; /* Adjust this value as needed */
+    object-fit: cover; /* Ensures the image doesn't stretch */
+    /*/width: 100%; /* Ensures responsiveness */
+}
+
+
+/*.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #e0ad12;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+    .btn:hover {
+        background: #e0ad12;
+    }*/
