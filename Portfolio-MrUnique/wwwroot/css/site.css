@@ -109,7 +109,6 @@ footer {
 }
 
 
-
 /*About Section css*/
 img.img-fluid {
     max-height: 600px; /* Adjust this value as needed */
@@ -148,18 +147,25 @@ img.img-fluid {
         font-size: 14px;
     }
 
-/*My Work css*/
 
-.work {
-    position: relative;
-    overflow: hidden;
+/*My Work css*/
+.projects{
+    background-color: brown;
 }
 
-    .work img {
+
+.project{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project img {
         width: 100%;
         display: block;
         transition: transform 0.5s;
-    }
+        border-radius: 10px;
+}
 
 .layer {
     width: 100%;
@@ -178,32 +184,33 @@ img.img-fluid {
     font-size: 14px;
     transition: height 0.5s;
 }
-/*
-    .layer h3 {
-        font-weight: 500;
-        margin-bottom: 20px;
-    }
 
-    .layer a {
-        margin-top: 20px;
-        color: #e0ad12;
-        text-decoration: none;
-        font-size: 18px;
-        line-height: 60px;
-        background: #fff;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        text-align: center;
-    }*/
-
-.work:hover img {
-    transform: scale(1.1);
+.layer a{
+    margin-top: 20px;
+    font-size: 18px;
+  line-height: 60px;
+    background: #221d1d;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
 }
 
-.work:hover .layer {
+.project:hover img {
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.project:hover .layer {
     height: 100%;
 }
+
+.project img.img-fluid {
+    max-height: 450px; /* Adjust this value as needed */
+    object-fit: cover; /* Ensures the image doesn't stretch */
+    /*/width: 100%; /* Ensures responsiveness */
+}
+
 
 /*.btn {
     display: block;
