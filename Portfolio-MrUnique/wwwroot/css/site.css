@@ -106,7 +106,9 @@ footer {
         padding: 20px;
         margin-top: -20px;
     }
+    
 }
+
 
 
 /*About Section css*/
@@ -149,11 +151,6 @@ img.img-fluid {
 
 
 /*My Work css*/
-.projects{
-    background-color: brown;
-}
-
-
 .project{
     position: relative;
     overflow: hidden;
@@ -229,8 +226,77 @@ img.img-fluid {
     }*/
 
 
-/*Contact Styling*/
-.contact-left p i {
+/*====================Contact Styling==========================*/
+
+/*Contact Section Title*/
+
+.section-title {
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+    .section-title h2 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+
+        .section-title h2:before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 160px;
+            height: 1px;
+            background: #ababab;
+            left: 0;
+            right: 0;
+            bottom: 1px;
+            margin: auto;
+        }       
+
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #60ACC6;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    .section-title p {
+        margin-bottom: 0;
+    }
+
+
+/*Contact Section Title*/
+@media(min-width: 769px) {
+    .contact-layout ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .contact-layout ul li {
+            list-style: none;
+        }
+            .contact-layout ul li div {
+            }
+    .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }  
+}
+
+
+contact-layout p i {
     margin-right: 15px;
     font-size: 25px;
     color: #60ACC6;
@@ -250,9 +316,8 @@ img.img-fluid {
      transform: translateY(-5px);  
 }
 
-.form-control {
-    color: white;
-    font-size: 18px;
-    border-radius: 6px;
-    outline: none;
+.cow {
+    border: solid;
+    border-color: #60ACC6;
 }
+
