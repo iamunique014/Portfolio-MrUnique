@@ -275,19 +275,20 @@ img.img-fluid {
         margin-bottom: 0;
     }
 
+/*Contact small screen screen*/
+.contact-layout ul li {
+    list-style: none;
+}
 
-/*Contact Section Title*/
+
+/*Contact large screen*/
 @media(min-width: 769px) {
     .contact-layout ul {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
-        .contact-layout ul li {
-            list-style: none;
-        }
-            .contact-layout ul li div {
-            }
+    
     .social-icons {
         display: flex;
         align-items: center;
