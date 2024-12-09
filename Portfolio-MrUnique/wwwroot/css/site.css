@@ -27,6 +27,31 @@ body {
     background-repeat: no-repeat;
 }
 
+/* navbar custom styling */
+.main-nav ul li a{
+    position: relative;
+}
+.main-nav ul li a:hover {
+    color: #60ACC6;
+}
+
+    .main-nav ul li a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #60ACC6;
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        transition: 0.5s;
+    }
+
+.main-nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+
 section {
     color: #ababab;
 }
