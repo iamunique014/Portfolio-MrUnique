@@ -46,16 +46,13 @@ body {
         transition: 0.5s;
     }
 
-.main-nav ul li a:hover::after {
-    width: 100%;
-}
-
-
+    .main-nav ul li a:hover::after {
+        width: 100%;
+    }
 
 section {
     color: #ababab;
 }
-
 
 /* Ensure the hero-section takes full height */
 .hero-section {
@@ -94,9 +91,6 @@ section {
     }
 
 .projects, .about {
-    /* min-height: 100vh;*/
-    /*padding: 40px 20px;
-    margin-top: 0;*/ /*Reset margin */
     background-color: rgba(0, 0, 0, 0.8); /* Ensure contrast if needed*/
 }
 
@@ -110,10 +104,6 @@ footer {
 }
 
 @media(max-width: 991px) {
-    .sidebar {
-        background-color: rgb(255, 255, 255, 0.15);
-        backdrop-filter: blur(10px);
-    }
 
     .hero-section h1 {
         font-size: 2.5rem;
@@ -138,9 +128,9 @@ footer {
 
 /*About Section css*/
 img.img-fluid {
-    max-height: 600px; /* Adjust this value as needed */
-    object-fit: cover; /* Ensures the image doesn't stretch */
-    width: 100%; /* Ensures responsiveness */
+    max-height: 600px;
+    object-fit: cover;      /* Ensures the image doesn't stretch */
+    width: 100%;            /* Ensures responsiveness */
 }
 
 .tab-links li a{
@@ -167,15 +157,14 @@ img.img-fluid {
     background-color: black;
 }
 
+/*Tabbed interface styles*/
+.tab-content ul li span {
+    color: #60ACC6;
+    font-size: 14px;
+}
+   
 
-    /*Tabbed interface styles*/
-    .tab-content ul li span {
-        color: #60ACC6;
-        font-size: 14px;
-    }
-
-
-/*My Work css*/
+/*============== My Work css =============*/
 .project{
     position: relative;
     overflow: hidden;
@@ -228,27 +217,9 @@ img.img-fluid {
 }
 
 .project img.img-fluid {
-    max-height: 450px; /* Adjust this value as needed */
+    max-height: 450px; 
     object-fit: cover; /* Ensures the image doesn't stretch */
-    /*/width: 100%; /* Ensures responsiveness */
 }
-
-
-/*.btn {
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #e0ad12;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff;
-    transition: background 0.5s;
-}
-
-    .btn:hover {
-        background: #e0ad12;
-    }*/
 
 
 /*====================Contact Styling==========================*/
